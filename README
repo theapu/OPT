@@ -1,5 +1,7 @@
 Requirements: Linux system with phantomjs and casperjs installed.
 
+phantomjs compiled for Ubuntu 64 bit included.
+
 Usage:
 
 Edit op2.js and replace the link in below line with your referral link 
