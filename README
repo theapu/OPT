@@ -1,0 +1,11 @@
+Requirements: Linux system with phantomjs and casperjs installed.
+
+Usage:
+
+Edit op2.js and replace the link in below line with your referral link 
+
+casper.thenOpen("https://oneplus.net/in/invites?kolid=6H2HZ").then(function () {
+
+bash op2.sh <number of referrals required>
+
+Example: bash op2.sh 5 will add maximum five referrals to your OPT share link.
