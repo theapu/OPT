@@ -1,10 +1,12 @@
-Requirements: Linux system with phantomjs and casperjs installed.
+Requirements: Linux/Windows system with phantomjs and casperjs installed.
 
 Download casperjs from here http://casperjs.org/ and install
 
 phantomjs compiled for Ubuntu 64 bit included in the git or compile it from the source if this binary does not work for you 
 
-copy it to /usr/local/bin/
+For Ubuntu copy it to /usr/local/bin/
+
+For windows install and configure phantomjs to use with casperjs 
 
 Usage:
 
@@ -12,9 +14,14 @@ Edit op2.js and replace the link in below line with your referral link
 
 casper.thenOpen("https://oneplus.net/in/invites?kolid=6H2HZ").then(function () {
 
+Ubuntu:
 bash op2.sh <number of referrals required>
 
-Example: bash op2.sh 5 will add maximum five referrals to your OPT share link.
+Windows:
+op2.bat <number of referrals required>
+
+
+Example: bash op2.sh 5 or bat op2.bat will add maximum five referrals to your OPT share link.
 
 How It works:
 
