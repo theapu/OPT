@@ -1,6 +1,10 @@
 Requirements: Linux system with phantomjs and casperjs installed.
 
-phantomjs compiled for Ubuntu 64 bit included.
+Download casperjs from here http://casperjs.org/ and install
+
+phantomjs compiled for Ubuntu 64 bit included in the git or compile it from the source if this binary does not work for you 
+
+copy it to /usr/local/bin/
 
 Usage:
 
@@ -11,3 +15,7 @@ casper.thenOpen("https://oneplus.net/in/invites?kolid=6H2HZ").then(function () {
 bash op2.sh <number of referrals required>
 
 Example: bash op2.sh 5 will add maximum five referrals to your OPT share link.
+
+How It works:
+
+Fake disposible email ids are generated at http://en.email-fake.com which are used to register at OPT reservation list using your referral link. All steps including email account generation, email subscription and verification are automated using javascripts in op2.js with the help of casperjs
